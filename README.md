@@ -15,3 +15,6 @@ BUILT WITH:
 Java - The language used
 Intellij Idea - Intergated development
 Spark - Framework
+
+LICENSE:
+This project is licensed under the MIT License - see the LICENSE file for details
