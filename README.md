@@ -10,7 +10,7 @@ Create a test class for running tests in the application.
 
 This is a sample test that tests if the getter method works.
 
-Built With
+BUILT WITH:
 
 Java - The language used
 Intellij Idea - Intergated development
