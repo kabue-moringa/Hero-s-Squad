@@ -4,7 +4,7 @@ This is a java app that enables a user create a hero and a squad and also the us
 AUTHOR
 joseph kabue
 
-###RUNNING TEST
+RUNNING TEST
 
 Create a test class for running tests in the application.
 
