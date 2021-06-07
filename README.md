@@ -4,11 +4,6 @@ This is a java app that enables a user create a hero and a squad and also the us
 AUTHOR:
 joseph kabue
 
-RUNNING TEST:
-
-Create a test class for running tests in the application.
-
-This is a sample test that tests if the getter method works.
 
 BUILT WITH:
 
