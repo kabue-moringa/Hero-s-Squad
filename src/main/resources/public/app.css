@@ -458,55 +458,7 @@ body {
   margin-top: 30px;
 }
 
-.slide-container {
-  margin: auto;
-  width: 600px;
-  text-align: center;
-}
 
-.wrapper {
-  padding-top: 40px;
-  padding-bottom: 40px;
-
-  &:focus {
-    outline: 0;
-  }
-}
-
-
-
-.clash-card {
-  background: white;
-  width: 300px;
-  display: inline-block;
-  margin: auto;
-  border-radius: $border-radius-size + 5;
-  position: relative;
-  text-align: center;
-  box-shadow: -1px 15px 30px -12px black;
-  z-index: 9999;
-}
-
-.clash-card__image {
-  position: relative;
-  height: 230px;
-  margin-bottom: 35px;
-  border-top-left-radius: $border-radius-size;
-  border-top-right-radius: $border-radius-size;
-}
-
-.clash-card__image--barbarian {
-  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian-bg.jpg');
-  img {
-    width: 400px;
-    position: absolute;
-    top: -65px;
-    left: -70px;
-  }
-}
-
-.clash-card__image--archer {
-  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/archer-bg.jpg');
   img {
     width: 400px;
     position: absolute;
@@ -516,7 +468,7 @@ body {
 }
 
 .clash-card__image--giant {
-  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/giant-bg.jpg');
+
   img {
     width: 340px;
     position: absolute;
@@ -526,12 +478,12 @@ body {
 }
 
 .clash-card__image--goblin {
-  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/goblin-bg.jpg');
+
   img {
-    width: 370px;
+    width: 380px;
     position: absolute;
-    top: -21px;
-    left: -37px;
+    top: -20px;
+    left: -35px;
   }
 }
 
