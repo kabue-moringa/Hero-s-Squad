@@ -38,7 +38,6 @@
   display: inline-block;
   float: right;
   list-style: none;
-  /* margin-right: 14px; */
   margin-top: -2px;
   text-align: right;
   transition: transform 0.5s ease-out;
@@ -52,12 +51,10 @@
         display: inline-block;
       }
     }
-
 #navbar li {
   display: inline-block;
   font-size: 20px;
 }
-
 #navbar li a {
   color: white;
   display: block;
@@ -72,15 +69,12 @@
   transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
 }
-
 #navbar li a:hover {
-  /* border-bottom: 1px solid rgb(28, 121, 184); */
   color: rgb(28, 121, 184);
   transition: all 1s ease;
   -webkit-transition: all 1s ease;
 }
 
-/* Animated Bottom Line */
 #navbar li a:before, #navbar li a:after {
   content: '';
   position: absolute;
@@ -94,14 +88,11 @@
   left: 0;
   transition: 0.5s;
 }
-
 #navbar li a:after {
   background: white;
   right: 0;
   text-decoration: none;
-  /* transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1); */
 }
-
 #navbar li a:hover:before {
   background: white;
   width: 100%;
@@ -116,11 +107,6 @@
   /* transition: 0s; */
 }
 
-
-
-/*======================================================
-                    Mobile Menu Menu Icon
-  ======================================================*/
 @media(max-width: 640px) {
   .menuIcon {
     cursor: pointer;
@@ -153,12 +139,10 @@
     top: -8px;
     height: 2px;
     width: 20px;
-/*     -webkit-transition: top 0.2s ease 0.3s;
-    transition: top 0.2s ease 0.3s; */
+
     -webkit-transition: 0.3s width 0.4s;
     transition: 0.3s width 0.4s;
   }
-
   .icon-bars::after {
     margin-top: 0px;
     background: rgb(13, 26, 38);
@@ -169,13 +153,11 @@
     height: 2px;
     width: 20px;
     text-decoration: none;
-/*     -webkit-transition: top 0.2s ease 0.3s;
-    transition: top 0.2s ease 0.3s; */
+
     -webkit-transition: 0.3s width 0.4s;
     transition: 0.3s width 0.4s;
   }
 
-  /* Bars Shadows */
   .icon-bars.overlay {
     background: rgb(97, 114, 129);
     background: rgb(183, 199, 211);
@@ -224,8 +206,6 @@
         100% {width: 0px}
       }
 
-
-  /* Toggle Menu Icon */
   .menuIcon.toggle .icon-bars {
     top: 5px;
     transform: translate3d(0, 5px, 0) rotate(135deg);
@@ -253,11 +233,6 @@
     transition: all 0s ease 0s;
   }
 }
-
-
-/*======================================================
-                   Responsive Mobile Menu
-  ======================================================*/
 .overlay-menu {
   background: lightblue;
   color: rgb(13, 26, 38);
@@ -291,8 +266,7 @@
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
   text-decoration: none;
-/*   -webkit-transition: 0.2s opacity 0.2s ease-out;
-  transition: 0.2s opacity 0.2s ease-out; */
+
 }
 
 .overlay-menu li a:hover,
@@ -302,11 +276,6 @@
   transition: color 0.3s ease;
   text-decoration: none;
 }
-
-
-
-
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
 
 * {
 	margin:0;
@@ -431,8 +400,6 @@ fieldset {
 :-ms-input-placeholder {
  color:#888;
 }
-
-
 
 $border-radius-size: 14px;
 $barbarian: #EC9B3B;
