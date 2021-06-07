@@ -1,17 +1,17 @@
-HERO SQUAD
+## HERO SQUAD
 This is a java app that enables a user create a hero and a squad and also the user can add a hero to a squad
 
-AUTHOR:
+## AUTHOR:
 joseph kabue wangari
 
 
-TECHNOLOGIES USED:
+### TECHNOLOGIES USED:
 
-Java - The language used
-Intellij Idea - Intergated development
-Spark - Framework
-HTML
+* [Java ]
+* [Intellij Idea]
+* [Spark]
+* [HTML]
 
 
-LICENSE:
+# LICENSE
 This project is licensed under the MIT License - see the LICENSE file for details
