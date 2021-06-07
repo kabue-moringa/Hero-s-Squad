@@ -23,17 +23,17 @@ public class App {
 
 
         staticFileLocation("/public");
-        String layout = "templates/layout.vtl";
+        String layout = "templates/layout.hbs";
 
         get("/", (request, response) -> {
 
-            model.put("template", "templates/home.vtl" );
+            model.put("template", "templates/home.hbs");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
 
         get("/squadform", (request, response) -> {
 
-            model.put("template", "templates/squadform.vtl");
+            model.put("template", "templates/squadform.hbs");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
 
@@ -45,13 +45,13 @@ public class App {
             model.put("squadname", squadname);
             model.put("squadcause", squadcause);
             model.put("membernumber", membernumber);
-            model.put("template", "templates/squadteam.vtl");
+            model.put("template", "templates/squadteam.hbs");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
 
         get("/heroform", (request, response) -> {
 
-            model.put("template", "templates/heroform.vtl");
+            model.put("template", "templates/heroform.hbs");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
 
@@ -67,13 +67,13 @@ public class App {
             model.put("heropower", heropower);
             model.put("heroweakness", heroweakness);
             model.put("heroage", heroage);
-            model.put("template", "templates/hero.vtl");
+            model.put("template", "templates/hero.hbs");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
 
         get("/herolist", (request, response) -> {
 
-            model.put("template", "templates/listhero.vtl" );
+            model.put("template", "templates/listhero.hbs");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
     }
