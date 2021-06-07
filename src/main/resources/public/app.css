@@ -346,9 +346,8 @@ body {
     background-image: url('images/avengplaindark.png');
     background-repeat: no-repeat;
 }
-
 .form {
-	max-width:600px;
+	max-width:550px;
 	width:100%;
 	margin:0 auto;
 	position:relative;
