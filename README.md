@@ -5,7 +5,7 @@ AUTHOR:
 joseph kabue
 
 
-BUILT WITH:
+TECHNOLOGIES USED:
 
 Java - The language used
 Intellij Idea - Intergated development
