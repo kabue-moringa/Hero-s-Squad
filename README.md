@@ -10,6 +10,8 @@ TECHNOLOGIES USED:
 Java - The language used
 Intellij Idea - Intergated development
 Spark - Framework
+HTML
+
 
 LICENSE:
 This project is licensed under the MIT License - see the LICENSE file for details
