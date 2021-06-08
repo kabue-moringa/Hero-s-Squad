@@ -6,6 +6,9 @@ import spark.ModelAndView;
 import spark.template.velocity.VelocityTemplateEngine;
 
 public class App {
+
+
+
     public static void main(String[] args) {
 
 
@@ -18,40 +21,38 @@ public class App {
         } else {
             port = 4567;
         }
-
         setPort(port);
 
-
         staticFileLocation("/public");
-        String layout = "templates/layout.hbs";
+        String layout = "templates/layout.vtl";
 
         get("/", (request, response) -> {
 
-            model.put("template", "templates/home.hbs");
+            model.put("template", "templates/home.vtl");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
 
         get("/squadform", (request, response) -> {
 
-            model.put("template", "templates/squadform.hbs");
+            model.put("template", "templates/squadform.vtl");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
 
         get("/squad", (request, response) -> {
 
             String squadname = request.queryParams("squadname");
-            String squadcause = request.queryParams("squadcause");
+//            String squadcause = request.queryParams("squadcause");
             String membernumber = request.queryParams("membernumber");
             model.put("squadname", squadname);
-            model.put("squadcause", squadcause);
+//            model.put("squadcause", squadcause);
             model.put("membernumber", membernumber);
-            model.put("template", "templates/squadteam.hbs");
+            model.put("template", "templates/squadteam.vtl");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
 
         get("/heroform", (request, response) -> {
 
-            model.put("template", "templates/heroform.hbs");
+            model.put("template", "templates/heroform.vtl");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
 
@@ -67,13 +68,13 @@ public class App {
             model.put("heropower", heropower);
             model.put("heroweakness", heroweakness);
             model.put("heroage", heroage);
-            model.put("template", "templates/hero.hbs");
+            model.put("template", "templates/hero.vtl");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
 
         get("/herolist", (request, response) -> {
 
-            model.put("template", "templates/listhero.hbs");
+            model.put("template", "templates/listhero.vtl");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
     }
