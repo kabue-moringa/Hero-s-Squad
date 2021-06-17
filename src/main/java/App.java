@@ -72,7 +72,7 @@ public class App {
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
 
-        get("/herolist", (request, response) -> {
+        get("/listhero", (request, response) -> {
 
             model.put("template", "templates/listhero.vtl");
             return new ModelAndView(model, layout);

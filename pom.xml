@@ -5,7 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.mycompany.app</groupId>
-    <artifactId>Hero-Squad</artifactId>
+    <artifactId>squad-hero-team
+
+    </artifactId>
     <version>1.0</version>
 
     <dependencies>
@@ -13,25 +15,23 @@
         <dependency>
             <groupId>com.sparkjava</groupId>
             <artifactId>spark-core</artifactId>
-            <version>2.2.5</version>
+            <version>2.2</version>
         </dependency>
         <dependency>
-            <groupId>org.apache.velocity</groupId>
-            <artifactId>velocity</artifactId>
+            <groupId>com.sparkjava</groupId>
+            <artifactId>spark-template-velocity</artifactId>
             <version>2.5.5</version>
         </dependency>
-        <dependency>
-
-
-            <groupId>org.postgresql</groupId>
-            <artifactId>postgresql</artifactId>
-            <version>9.4.1208</version>
-        </dependency>
-        <dependency>
-            <groupId>org.sql2o</groupId>
-            <artifactId>sql2o</artifactId>
-            <version>1.5.4</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.postgresql</groupId>-->
+<!--            <artifactId>postgresql</artifactId>-->
+<!--            <version>9.4.1208</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>org.sql2o</groupId>-->
+<!--            <artifactId>sql2o</artifactId>-->
+<!--            <version>1.5.4</version>-->
+<!--        </dependency>-->
     </dependencies>
     <build>
         <plugins>
@@ -69,13 +69,17 @@
             <plugin>
                 <groupId>com.heroku.sdk</groupId>
                 <artifactId>heroku-maven-plugin</artifactId>
-                <version>0.4.4</version>
+                <version>3.0.3</version>
                 <configuration>
                     <jdkVersion>1.8</jdkVersion>
                     <!-- Change this to YOUR application name! -->
-                    <appName>Hero-Squad</appName>
+                    <appName>squad-hero-team
+
+                    </appName>
                     <processTypes>
-                        <web>java -jar target/my-app-1.0-jar-with-dependencies.jar</web>
+                        <web>java -jar target/squad-hero-team-1.0-jar-with-dependencies.jar</web>
+
+
                     </processTypes>
                 </configuration>
             </plugin>

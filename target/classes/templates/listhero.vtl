@@ -2,7 +2,7 @@
     <p>.</p>
     <h1 style="font-family: 'Anton', sans-serif; margin-top:10%;color:white;font-size:50px;"> HEROS CREATED!</h1>
     <h4 style="color:white;">This is a list of hero's created.</h4>
-    #if ("$heroname")
+    #if '($heroname)'
     <h3 style="font-family:  sans-serif; margin-top:5%;">$heroname</h3>
 
     <h3 style="font-family: 'Hi Melody', cursive;">$whichsquad</h3>
@@ -12,7 +12,7 @@
     <hr style="width:50%;opacity:0.2">
     #else
             <hr style="width:50%;opacity:0.2">
-            (listhero)
+            listhero:
           #end
 
 </div>
